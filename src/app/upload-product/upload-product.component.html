@@ -1,0 +1,54 @@
+<p>upload-product works!</p>
+
+<mat-tab-group style="margin: 100px;">
+    <div >
+    <mat-tab label="First"> 
+        <mat-form-field appearance="fill">
+            <mat-label>Name of Product</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Id of Product</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Price of Product</mat-label>
+            <input matInput><br>
+          </mat-form-field>
+    </mat-tab>
+    </div>
+    <div>
+    <mat-tab label="Second"> 
+        <mat-form-field appearance="fill" style="max-height: 132px;
+        height: 500px;
+    ">
+            <mat-label>Product Description</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Your Name</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Email ID</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+    </mat-tab>
+    </div>
+    <div>
+        <mat-tab label="Third"> 
+            <!-- <mat-form-field appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+                   -->
+        </mat-tab>
+    </div>
+    
+  </mat-tab-group>

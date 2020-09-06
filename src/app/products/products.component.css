@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 110px;
+    height: 321px;
+    margin: 15px;
+
+  }
+.mat-card-image{
+    max-width: 94px;
+    height:120px;
+    margin: inherit;
+}
+ .total-card{
+   padding: 0px 10px;;
+ } 
+  
+  

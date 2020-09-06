@@ -1,0 +1,53 @@
+<p>
+  <mat-toolbar>
+    <button 
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+    <mat-icon aria-hidden="false" aria-label="Example home icon" routerLink="/products">home</mat-icon>
+   </button>
+   
+    <span >Shopping Cart</span>
+    <span><a mat-button routerLink="/products" >Home</a>
+        <a mat-button routerLink="/products" >Our Products</a>
+        <a mat-button routerLink="/products" >Work Board</a>
+    </span>
+    <span class="example-spacer"></span>
+   <div style="display: flex;">
+    <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+    
+  >
+    <mat-icon>favorite</mat-icon><span>{{wishList.length}}</span>
+  </button>
+  <a routerLink="/cart" style="color: white;"> <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    routerLink="/cart-list"
+  >
+    <mat-icon>add_shopping_cart</mat-icon><span>{{this.cartProducts.length}}</span>
+  </button></a>
+ 
+<button
+mat-icon-button
+class="example-icon"
+aria-label="Example icon-button with share icon"
+routerLink="/login-signup"
+>
+<mat-icon>account_circle</mat-icon>
+</button>
+<button
+mat-icon-button
+class="example-icon"
+aria-label="Example icon-button with share icon"
+routerLink="/upload-product"
+>
+<mat-icon>add</mat-icon>
+</button>
+</div>
+      </mat-toolbar>
+</p>

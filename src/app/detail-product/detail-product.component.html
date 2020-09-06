@@ -1,0 +1,25 @@
+<div>
+    <div class="img-data">
+        <div class="img--name" style="padding: 22px;">
+            <img src="{{product.image}}" style="height: 350px;">
+        <hr>
+            <h3>{{product.productName}}</h3>
+        <hr>
+            <h3>
+                {{product.productId}}
+            </h3>
+           <button mat-raised-button mat-raised-button color="accent" (click)="onClick(product)">Add to Cart</button>
+        </div>
+        <div style="width: 764px;">
+            <h4>Product Details</h4>
+            <p>{{product.productDescription}}</p>
+            <h4>Product Category</h4><p>{{product.productType}}</p>
+            <hr>
+            <h4>NO Of Quantity Available</h4>
+            <h3>2</h3>
+            <hr>
+            <h4>Product Added Date</h4>
+            <h3>{{product.dateOfProduct}}</h3>
+        </div>
+    </div>
+</div>

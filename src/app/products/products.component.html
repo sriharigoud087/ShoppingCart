@@ -1,0 +1,36 @@
+<div class="total-card">
+    <mat-card class="example-card">
+      
+      <img mat-card-image src="{{product.image}}" alt="Photo of a Shiba Inu" >
+    <mat-card-content>
+        <p>
+             <a routerLink="/detail/{{product.productId}}">
+               <span class="badge"> {{product.productName}}{{product.productId}}</span>
+            
+            </a>
+        </p>
+        <p><span style="color: black;">Upto 25%</span></p>
+         </mat-card-content>
+        <mat-card-actions>
+            <button
+            mat-icon-button
+            class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon"
+            (click)=onFavourite();
+          >
+            <mat-icon>favorite</mat-icon>
+          </button>
+          
+        <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon>
+      </button>
+        <hr>
+        <p>${{product.priceOfProduct}}</p>
+        </mat-card-actions>
+      </mat-card>   
+</div>
+

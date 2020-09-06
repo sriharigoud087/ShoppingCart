@@ -1,0 +1,9 @@
+.img-data
+{
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    color:orangered;
+    font-size: large;
+}
