@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatInputModule} from '@angular/material/input';
-import{MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
@@ -14,13 +14,17 @@ import { ProductComponent } from './product/product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { CartListComponent } from './cart-list/cart-list.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { HttpClientModule } from '@angular/common/http';
- 
-import{MatFormField} from '@angular/material/form-field';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatFormField } from '@angular/material/form-field';
+import { MatTabsModule } from '@angular/material/tabs';
 import { UploadProductComponent } from './upload-product/upload-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { WorkBoardComponent } from './work-board/work-board.component';
+import { ChartModule } from 'primeng/chart';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,7 @@ import { UploadProductComponent } from './upload-product/upload-product.componen
     CartListComponent,
     LoginSignupComponent,
     UploadProductComponent,
-   
+    WorkBoardComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,9 +49,12 @@ import { UploadProductComponent } from './upload-product/upload-product.componen
     MatProgressBarModule,
     MatTabsModule,
     MatDatepickerModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ChartModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

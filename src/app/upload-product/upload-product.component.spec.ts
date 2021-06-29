@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {FormControl} from '@angular/forms';
 import { UploadProductComponent } from './upload-product.component';
 
 describe('UploadProductComponent', () => {

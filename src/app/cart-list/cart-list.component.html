@@ -1,46 +1,68 @@
-<div *ngIf="cartProducts.length==0">
-   <div style="margin: 174px;
-   margin-left: 557px;margin-top:125px">
-       <h1>Opps!</h1>
-       <h1>No Products Found in Cart</h1>
-       <h3>Please,Add Products to Cart</h3>
-       <div>
-        <button mat-raised-button mat-raised-button color="accent" routerLink='/products'>Take Me Home</button>
-        
-       </div>
+<div *ngIf="cartProducts.length == 0">
+  <div style="margin: 174px; margin-left: 557px; margin-top: 125px">
+    <h1>Opps!</h1>
+    <h1>No Products Found in Cart</h1>
+    <h3>Please,Add Products to Cart</h3>
+    <div>
+      <button
+        mat-raised-button
+        mat-raised-button
+        color="accent"
+        routerLink="/products"
+      >
+        Take Me Home
+      </button>
     </div>
+  </div>
 </div>
 <div *ngFor="let cartpro of cartProducts">
-    <div class="img-data" >
-        <div class="img--name" style="padding: 22px;">
-            <img src="{{cartpro.image}}" style="height: 350px;">
-        <hr>
-            <h4>{{cartpro.productName}}</h4>
-        <hr>
-            <h4>
-                {{cartpro.productId}}
-            </h4>
-            <button 
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-    <mat-icon aria-hidden="false" aria-label="Example home icon"  routerLink="/detail/{{cartpro.productId}}" >remove_red_eye</mat-icon>
-    <mat-icon aria-hidden="false" aria-label="Example home icon"  routerLink="/cart" (click)="onDelete(cartpro.productId)">delete</mat-icon>
-   
-</button>
-        </div>
-        <div style="width: 642px;
-       
-    ">
-            <h4 style="font: 700;">Your Cart</h4>
-            <h3>${{cartpro.priceOfProduct}}</h3>
-            <hr>
-            <h4>{{cartpro.productName}}</h4>
-            <hr>
-            <button mat-raised-button color="accent" routerLink="/products">Continue Shopping</button>
-            <button mat-raised-button color="orange" style="background:orange;margin-left: 25px;" routerLink="/login-signup">Buy Now</button>
-        
-         </div>
+  <div class="img-data">
+    <div class="img--name" style="padding: 22px">
+      <img src="{{ cartpro.image }}" style="height: 350px" />
+      <hr />
+      <h4>{{ cartpro.productName }}</h4>
+      <hr />
+      <h4>
+        {{ cartpro.productId }}
+      </h4>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          routerLink="/detail/{{ cartpro.productId }}"
+          >remove_red_eye</mat-icon
+        >
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          routerLink="/cart"
+          (click)="onDelete(cartpro.productId)"
+          >delete</mat-icon
+        >
+      </button>
     </div>
+    <div style="width: 642px">
+      <h4 style="font: 700">Your Cart</h4>
+      <h3>${{ cartpro.priceOfProduct }}</h3>
+      <hr />
+      <h4>{{ cartpro.productName }}</h4>
+      <hr />
+      <button mat-raised-button color="accent" routerLink="/products">
+        Continue Shopping
+      </button>
+      <button
+        mat-raised-button
+        color="orange"
+        style="background: orange; margin-left: 25px"
+        routerLink="/login-signup"
+      >
+        Buy Now
+      </button>
+      <i class="pi-apple" style="font-size: 2rem"></i>
+    </div>
+  </div>
 </div>
